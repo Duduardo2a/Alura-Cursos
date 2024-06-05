@@ -1,0 +1,13 @@
+package br.com.alura.minhasmusicas.modelos;
+
+public class MinhasPreferidas {
+
+    public void inclui(Audio audio) {
+        if(audio.getClassificacao() >= 8) {
+            System.out.printf(audio.getTitulo() + " é considerado sucesso absoluto" +
+                    " e preferido por todos");
+        } else {
+            System.out.printf(audio.getTitulo() + " também é um dos sucessos que todos estão curtindo");
+        }
+    }
+}
